@@ -1,15 +1,12 @@
 {
   "files": {
-    "main.css": "/ti-react-dapp-app/static/css/main.e6c13ad2.css",
-    "main.js": "/ti-react-dapp-app/static/js/main.1c9fb6f2.js",
+    "main.js": "/ti-react-dapp-app/static/js/main.ef68244e.js",
     "static/media/dapp.png": "/ti-react-dapp-app/static/media/dapp.70067729f620638d9839.png",
     "static/media/eth.png": "/ti-react-dapp-app/static/media/eth.b7bf5958d4febb5e1def.png",
     "index.html": "/ti-react-dapp-app/index.html",
-    "main.e6c13ad2.css.map": "/ti-react-dapp-app/static/css/main.e6c13ad2.css.map",
-    "main.1c9fb6f2.js.map": "/ti-react-dapp-app/static/js/main.1c9fb6f2.js.map"
+    "main.ef68244e.js.map": "/ti-react-dapp-app/static/js/main.ef68244e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.1c9fb6f2.js"
+    "static/js/main.ef68244e.js"
   ]
 }
