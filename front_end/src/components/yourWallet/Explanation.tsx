@@ -1,4 +1,4 @@
-import { Box, Button, Link } from "@material-ui/core"
+import { Box, Link } from "@material-ui/core"
 import { Token } from "../Main"
 
 interface ExplanationProps {

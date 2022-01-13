@@ -17,23 +17,25 @@ export const Header: React.FC<AppProps<boolean>> = ({ theme }) => {
             alignItems="center"
             flexDirection="row">
             <h1>Dapp app</h1>
-            <Box display="flex" flexDirection="column">
-                {isConnected ? (
-                    <Button color="primary" variant="contained"
-                        onClick={deactivate}>
-                        Disconnect
-                    </Button>
-                ) : (
-                    <Button color="primary" variant="contained"
-                        onClick={() => activateBrowserWallet()}>
-                        Connect
-                    </Button>
-                )
-                }
-
+            <Box display="flex" flexDirection="column" alignItems="right">
+                <Box display="flex" width="220px">
+                    <Box display="flex" pr="10px" alignItems="center">Kovan</Box>
+                    {isConnected ? (
+                        <Button style={{ width: 200 }} color="primary" variant="contained"
+                            onClick={deactivate}>
+                            Disconnect
+                        </Button>
+                    ) : (
+                        <Button style={{ width: 200 }} color="primary" variant="contained"
+                            onClick={() => activateBrowserWallet()}>
+                            Connect
+                        </Button>
+                    )
+                    }
+                </Box>
                 <FormControlLabel control={
                     <Switch checked={theme[0]} onChange={() => theme[1](!theme[0])} />
-                } label="Dark theme" />
+                } label="Dark theme" labelPlacement="start"/>
 
             </Box>
         </Box>
