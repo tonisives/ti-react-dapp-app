@@ -10,7 +10,7 @@ export const Explanation = ({ token }: ExplanationProps) => {
 
     return (
         <Box display={visible} justifyContent="center">
-            <p>Add FAU tokens at <Link href="https://erc20faucet.com/">erc20faucet.com</Link></p>
+            <p>Add FAU tokens at <Link color="textSecondary" href="https://erc20faucet.com/">erc20faucet.com</Link></p>
         </Box>
     )
 }
