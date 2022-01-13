@@ -54,14 +54,12 @@ export const useStakeTokens = (tokenAddress: string) => {
     useEffect(() => {
         if (approveState.status === "Success") {
             approveState.status = "None"
-            // stake
             console.log("Approved ERC20 transfer")
             stakeTokensSend(amountToStake, tokenAddress)
-            console.log(stakeState.status)
         }
 
         // if anything in this array changes, it will kick off the useEffect
-    }, [approveState, amountToStake, tokenAddress])
+    }, [approveState, amountToStake, tokenAddress, stakeTokensSend])
 
     // return the approve function, so it can be called with the amount from the StakeForm
     return { approveAndStake, approveState, stakeState }

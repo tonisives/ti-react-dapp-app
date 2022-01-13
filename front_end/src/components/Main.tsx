@@ -21,7 +21,7 @@ export const Main = () => {
     // Show token values from the wallet
     // Get the address of different tokens
     // Get the balance of the users wallet 
-    const { chainId, error } = useEthers()
+    const { chainId } = useEthers()
     const networkName = chainId ? helperConfig[chainId] : "dev"
 
     // const dappTokenAddress ??
@@ -35,14 +35,14 @@ export const Main = () => {
 
     const supportedTokens: Array<Token> = [
         {
-            image: dapp,
-            address: dappTokenAddress,
-            name: "DAPP"
-        },
-        {
             image: dai,
             address: daiTokenAddress,
             name: "FAU"
+        },
+        {
+            image: dapp,
+            address: dappTokenAddress,
+            name: "DAPP"
         },
         {
             image: eth,

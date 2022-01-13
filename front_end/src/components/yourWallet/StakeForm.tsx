@@ -12,7 +12,7 @@ interface StakeFormProps {
 }
 
 export const StakeForm = ({ token }: StakeFormProps) => {
-    const { address: tokenAddress, name } = token
+    const { address: tokenAddress } = token
     const [amount, setAmount] = useState<number | string | Array<number | string>>(0)
     const { notifications } = useNotifications()
 

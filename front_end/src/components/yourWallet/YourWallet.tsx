@@ -4,7 +4,6 @@ import { useState } from "react"
 import { Token } from "../Main"
 import { StakeForm } from "./StakeForm"
 import { UnstakeForm } from "./UnstakeForm"
-import { WalletBalance } from "./WalletBalance"
 
 interface YourWalletProps {
     supportedTokens: Array<Token>

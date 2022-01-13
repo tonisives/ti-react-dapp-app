@@ -8,6 +8,8 @@
 
 ![demo](demo.gif)
 
+Check out the demo at https://tonisives.github.io/ti-react-dapp-app/
+
 # TODO
 
 deposit method has re-entry attack vulnerability

@@ -1,4 +1,4 @@
-import { Box, Button, CircularProgress, Input, Paper, Snackbar } from "@material-ui/core";
+import { Box, Button, CircularProgress, Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import { useNotifications } from "@usedapp/core";
 import { formatUnits } from "ethers/lib/utils";
@@ -13,15 +13,8 @@ interface UnstakeFormProps {
 }
 
 export const UnstakeForm = ({ token }: UnstakeFormProps) => {
-    const { address: tokenAddress, name } = token
-    const [amount, setAmount] = useState<number | string | Array<number | string>>(0)
+    const { address: tokenAddress } = token
     const { notifications } = useNotifications()
-
-    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const newAmount = event.target.value === "" ? "" : Number(event.target.value)
-        setAmount(newAmount)
-        console.log(newAmount)
-    }
 
     // TODO: show success/failed notifications
     const { unstakeSend, unstakeState } = useUnstakeTokens(tokenAddress)
