@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 import ReactDOM from "react-dom";
 import { createTheme, CssBaseline, ThemeProvider } from "@material-ui/core";
 import App from "./App";
-import { amber, blue, lightBlue, orange } from "@material-ui/core/colors";
+import { blue, lightBlue } from "@material-ui/core/colors";
 
 const themeLight = createTheme({
   palette: {
