@@ -16,7 +16,7 @@ export const Header: React.FC<AppProps<boolean>> = ({ theme }) => {
             display="flex"
             alignItems="center"
             flexDirection="row">
-            <h1>Dapp app</h1>
+            <h1>Dapp App</h1>
             <Box display="flex" flexDirection="column" alignItems="right">
                 <Box display="flex" width="220px">
                     <Box display="flex" pr="10px" alignItems="center">Kovan</Box>
