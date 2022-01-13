@@ -2,6 +2,7 @@ import { Avatar, Box, Tab } from "@material-ui/core"
 import { TabContext, TabList, TabPanel } from "@material-ui/lab"
 import { useState } from "react"
 import { Token } from "../Main"
+import { Explanation } from "./Explanation"
 import { StakeForm } from "./StakeForm"
 import { UnstakeForm } from "./UnstakeForm"
 
@@ -51,6 +52,7 @@ export const YourWallet = ({ supportedTokens }: YourWalletProps) => {
                                 <Box pr="80px" />
                                 <UnstakeForm token={token} />
                             </Box>
+                            <Explanation token={token} />
                         </TabPanel>
                     )
                 })}

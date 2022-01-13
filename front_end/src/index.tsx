@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import { createTheme, CssBaseline, ThemeProvider } from "@material-ui/core";
 import App from "./App";
 import './index.css';
+import { amber, blue, lightBlue, orange } from "@material-ui/core/colors";
 
 const themeLight = createTheme({
   palette: {
+    secondary: blue,
     background: {
-      default: "#e4f0e2",
+      default: lightBlue[100],
       paper: "#ffffff"
     }
   }
@@ -15,12 +17,16 @@ const themeLight = createTheme({
 
 const themeDark = createTheme({
   palette: {
+    primary: amber,
+    secondary: orange,
+
     background: {
       default: "#222222",
-      paper: "#333333"
+      paper: "#333333",
     },
     text: {
       primary: "#ffffff"
+
     }
   }
 });
